@@ -17,8 +17,8 @@ class DateModel(DateStruct):
 
         try:
             day_check = 1 if int(day) <= 30 and int(day) > 0 else 0
-            month_check = 1 if int(day) <= 30 and int(day) > 0 else 0
-            year_check = 1 if int(day) <= 30 and int(day) > 0 else 0
+            month_check = 1 if int(month) <= 12 and int(month) > 0 else 0
+            year_check = 1 if int(year) <= 9999 and int(year) > 0 else 0
 
             if (day_check == 1 and month_check == 1 and year_check == 1): return 1
             else: return 0
